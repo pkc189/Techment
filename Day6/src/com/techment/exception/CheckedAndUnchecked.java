@@ -14,6 +14,10 @@ public class CheckedAndUnchecked {
 		
 		
 		try {
+			
+			
+			
+			
 			 throw new FileNotFoundException("file not found");
 		}
 		catch(Exception e)

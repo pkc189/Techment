@@ -3,6 +3,7 @@ package com.techment;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Objects;
 
 class Student{
 	int id;
@@ -14,6 +15,30 @@ class Student{
 		this.name = name;
 		this.age = age;
 	}
+	
+	
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(age, id, name);
+	}
+
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Student other = (Student) obj;
+		return age == other.age && id == other.id && Objects.equals(name, other.name);
+	}
+
+
+
 	@Override
 	public String toString() {
 		return "Student [id=" + id + ", name=" + name + ", age=" + age + "]";
