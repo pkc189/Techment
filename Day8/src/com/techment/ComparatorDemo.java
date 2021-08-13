@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Objects;
 
-class Student{
+class Student implements Comparable<Student>{
 	int id;
 	String name;
 	int age;
@@ -42,6 +42,14 @@ class Student{
 	@Override
 	public String toString() {
 		return "Student [id=" + id + ", name=" + name + ", age=" + age + "]";
+	}
+
+
+
+	@Override
+	public int compareTo(Student o) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	
 }
