@@ -101,7 +101,11 @@ class AgeSorting implements Comparator<Patient> {
 }
 
 public class TestPatientList {
-
+static void f() {
+	
+}
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -143,12 +147,19 @@ public class TestPatientList {
 
 		}
 
+		
+		
+		
 	TreeSet<Patient> ts = new TreeSet<Patient>(patient);
 
 		for(Patient t:ts)
 		{
 			System.out.println(t);
 		}
+		
+		
+		
+		
 
 	}
 

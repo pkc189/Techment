@@ -23,12 +23,17 @@ public class ScoreCard {
 		System.out.println("Scores by Players");
 		int sum = 0;
 		int max = 0;
+		
+		
+		
 		for (Entry<String, Integer> e : map.entrySet()) {
 			sum += e.getValue();
 			max = Math.max(max, e.getValue());
 			System.out.println(e.getKey() + " " + e.getValue());
 		}
 
+		
+		
 		System.out.println("Total Score " + sum);
 
 		for (Entry<String, Integer> e : map.entrySet()) {
