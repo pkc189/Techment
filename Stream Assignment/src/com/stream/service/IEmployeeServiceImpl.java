@@ -88,8 +88,20 @@ public class IEmployeeServiceImpl implements IEmployeeService {
 
 
 
+
+
 	@Override
-	public void sortAll(ArrayList<Employee> employees, List<Department> departments) {
+	public void empWithoutManager(ArrayList<Employee> employees) {
+		// TODO Auto-generated method stub
+		
+		employee.empWithoutManager(employees);
+		
+		
+		
+	}
+
+	@Override
+	public void sortAll(ArrayList<Employee> employees, ArrayList<Department> departments) {
 		// TODO Auto-generated method stub
 		employee.sortAll(employees,departments);
 	}

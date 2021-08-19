@@ -20,5 +20,6 @@ public interface IEmployeeService {
 	void empNameDetailsHired(ArrayList<Employee> employees, String string);
 	void empDetailsReportToManager(ArrayList<Employee> employees);
 	void empSalaryIncreasesBy(ArrayList<Employee> employees, int i);
-	void sortAll(ArrayList<Employee> employees, List<Department> departments);
+	void sortAll(ArrayList<Employee> employees, ArrayList<Department> departments);
+	void empWithoutManager(ArrayList<Employee> employees);
 }

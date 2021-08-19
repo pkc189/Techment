@@ -1,5 +1,7 @@
 package com.stream.client;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -15,16 +17,17 @@ import com.stream.utility.EmployeeUtil;
 
 public class Application {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ParseException {
 		// TODO Auto-generated method stub
 
+		// interface obj = new Class();
 		IEmployeeService service = new IEmployeeServiceImpl();
 
 		EmployeeUtil empUtil = new EmployeeUtil();
 		
 
 		ArrayList<Employee> employees = empUtil.getEmployeeList();
-		List<Department> departments = empUtil.getDepartmentList();
+		ArrayList<Department> departments = empUtil.getDepartmentList();
 
 		System.out.println("=====Employee Application====");
 
@@ -67,6 +70,14 @@ public class Application {
 		System.out.println("All sorting");
 		
 		service.sortAll(employees,departments);
+		
+		
+		System.out.println("Emp without manager ");
+		service.empWithoutManager(employees);
+		
+		
+		//System.out.println(new SimpleDateFormat("dd/MM/yyyy").parse("10/03/2020"));
+		
 		
 	}
 

@@ -15,18 +15,22 @@ public class EmployeeUtil {
 
 	static {
 
-		Department d1 = new Department(1, "hr", 5679);
-		Department d2 = new Department(2, "developer", 5680);
-		Department d3 = new Department(3, "QA", 5673);
-		Department d4 = new Department(4, "Testing", 0);
-
-		departments.add(d1);
-		departments.add(d2);
-		departments.add(d3);
-		departments.add(d4);
-		departments.add(new Department(4, "hr", 5659));
 
 		try {
+			
+			
+
+			Department d1 = new Department(1, "hr", 5679);
+			Department d2 = new Department(2, "developer", 5680);
+			Department d3 = new Department(3, "QA", 5673);
+			Department d4 = new Department(4, "Testing", 0);
+
+			departments.add(d1);
+			departments.add(d2);
+			departments.add(d3);
+			departments.add(d4);
+			departments.add(new Department(5, "hr", 5659));
+			
 			employees.add(new Employee(22, "Pankaj", "Chouhan", "pankajchauhan189@gmail.com", "8770631461",
 					new SimpleDateFormat("dd/MM/yyyy").parse("10/03/2020"), "Developer", 50000, 5680, d2));
 			employees.add(new Employee(27, "Naveen", "Singh", "naveensingh19@gmail.com", "6770631461",
@@ -36,7 +40,11 @@ public class EmployeeUtil {
 			employees.add(new Employee(28, "Robert", "mey", "robertmey@gmail.com", "960031461",
 					new SimpleDateFormat("dd/MM/yyyy").parse("10/03/2020"), "recuiter", 78000, 5679, null));
 			
+			employees.add(new Employee(22, "Vamshi", "mey", "vamshi@gmail.com", "9600321461",
+					new SimpleDateFormat("dd/MM/yyyy").parse("10/03/2020"), "recuiter", 100000, 0, null));
+			
 
+		
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -46,7 +54,7 @@ public class EmployeeUtil {
 	public static ArrayList<Employee> getEmployeeList(){
 		return employees;
 	}
-	public static List<Department> getDepartmentList(){
+	public static ArrayList<Department> getDepartmentList(){
 			return departments;
 		
 	

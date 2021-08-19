@@ -20,7 +20,7 @@ public class IEmployeeDaoImpl implements IEmployee {
 
 		
 		double a = employees.stream().collect(Collectors.summarizingDouble(Employee::getSalary)).getSum();
-double b = employees.stream().
+
 		return a;
 	}
 
@@ -117,7 +117,8 @@ double b = employees.stream().
 	}
 
 	@Override
-	public void sortAll(ArrayList<Employee> employees, List<Department> departments) {
+	
+	public void sortAll(ArrayList<Employee> employees, ArrayList<Department> departments) {
 		// TODO Auto-generated method stub
 
 		System.out.println("\nSort by Emp id \n");
@@ -125,8 +126,44 @@ double b = employees.stream().
 
 		System.out.println("\nSort by Department id");
 
-		// departments.stream().sorted(Comparator.comparingInt(Department::getDepartmentId).forEach(System.out::println);
+		departments.stream().sorted(Comparator.comparingInt(Department::getDepartmentId)).forEach(i->System.out.println(i));
+		 
+
+		
+		
+		
+		// Sort by name
+		
+		System.out.println("\n Sort by name ");
+		employees.stream().sorted(Comparator.comparing(Employee::getFirstName)).forEach(System.out::println);
+	
+		
+		
+		
+		 
 
 	}
+
+	@Override
+	public void empWithoutManager(ArrayList<Employee> employees) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("\nEmp have no manager ");
+		employees.stream().filter(i->i.getManagerId()==0).forEach(System.out::println);
+		
+		
+		
+	}
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }
