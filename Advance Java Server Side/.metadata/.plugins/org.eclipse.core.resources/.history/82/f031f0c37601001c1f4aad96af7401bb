@@ -1,0 +1,19 @@
+package com.techment.practice;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class MapToLong {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+List<String> list = Arrays.asList("25","225","1000");
+
+list.stream().mapToLong(num->Long.parseLong(num)).forEach(i->System.out.println(i+5););
+
+
+
+		
+	}
+
+}

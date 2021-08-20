@@ -1,0 +1,10 @@
+package com.techment.practice;
+
+public class MapToLong {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Life cycle of servlet</h1>
+
+<hr>
+<a href ="first">client here to call first servlet</a>
+<hr/>
+</body>
+</html>
