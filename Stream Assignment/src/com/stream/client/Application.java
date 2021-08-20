@@ -72,7 +72,7 @@ public class Application {
 		service.sortAll(employees,departments);
 		
 		
-		System.out.println("Emp without manager ");
+		
 		service.empWithoutManager(employees);
 		
 		
