@@ -1,0 +1,28 @@
+package com.techment.practice;
+
+import java.util.Scanner;
+
+class AgeCalculator {
+
+	private int age;
+
+	int calculateAge(String dob) {
+		return 0;
+	}
+}
+
+public class Age {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("enter dob in dd/mm/yyyy ");
+		String dob = scanner.next();
+
+		AgeCalculator obj = new AgeCalculator();
+
+		System.out.println(obj.calculateAge(dob));
+
+	}
+
+}

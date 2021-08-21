@@ -1,0 +1,60 @@
+package com.techment.practice;
+
+import java.util.Scanner;
+
+class AgeCalculator {
+
+	private int age;
+
+	int calculateAge(String dob) throws invalidDob {
+		
+	int date1 = Integer.parseInt(dob.substring(1, 2));
+	
+	System.out.println(date1);
+		
+	if(dob.length()!=10)
+		throw new invalidDob("invalid age");
+		
+		
+		
+		
+		
+		
+		
+		return 0;
+	}
+}
+
+
+class invalidDob extends Exception{
+	
+	public invalidDob(String msg)
+	{
+		super(msg);
+	}
+}
+
+
+public class Age {
+
+	public static void main(String[] args) throws invalidDob {
+
+		try {
+			
+			
+			Scanner scanner = new Scanner(System.in);
+			System.out.println("enter dob in dd/mm/yyyy ");
+			String dob = scanner.next();
+
+			AgeCalculator obj = new AgeCalculator();
+
+			System.out.println(obj.calculateAge(dob));
+			
+		}catch(Exception e)
+		{
+			System.out.println(e.getMessage());
+		}
+
+	}
+
+}
