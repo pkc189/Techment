@@ -1,4 +1,4 @@
-package com.techment.practice;
+package com.techment.question.three;
 
 import java.time.LocalDate;
 import java.util.Scanner;
@@ -60,7 +60,7 @@ public class Age {
 
 			System.out.println(obj.calculateAge(dob));
 			
-		}catch(Exception e)
+		}catch(invalidDob e)
 		{
 			System.out.println(e.getMessage());
 		}
