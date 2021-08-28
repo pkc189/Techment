@@ -4,8 +4,8 @@
 <beans>
 
 <bean id="id1" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-  <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
-  <property name="url" value="jdbc:oracle:thin:@localhost:5000:XE"/>
+  <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+  <property name="url" value="jdbc:mysql://localhost:5000/user"/>
   <property name="username" value="root"/>
   <property name="password" value="Bodygaurd@2013"/>
 </bean>
@@ -16,7 +16,7 @@
   </constructor-arg>
 </bean>
 
-<bean id="id3" class="java4s.SpringJdbcCreateTable">
+<bean id="id3" class="com.techment.CreateTable">
   <property name="jt">
      <ref bean="id2"/>
   </property>

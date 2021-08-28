@@ -6,6 +6,11 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Downloads/jar_files/spring-beans-5.2.16.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Downloads/jar_files/spring-core-5.2.16.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Downloads/jar_files/spring-jcl-5.2.16.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Downloads/jar_files/spring-jdbc-5.2.16.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Downloads/jar_files/spring-tx-5.2.16.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/spcorejars/com.springsource.org.apache.commons.logging-1.1.1.jar"/>
 	<classpathentry kind="lib" path="C:/spcorejars/com.springsource.org.apache.log4j-1.2.15.jar"/>
 	<classpathentry kind="lib" path="C:/spcorejars/jmxtools-1.2.1.jar"/>
@@ -14,5 +19,6 @@
 	<classpathentry kind="lib" path="C:/spcorejars/org.springframework.context-3.0.1.RELEASE-A.jar"/>
 	<classpathentry kind="lib" path="C:/spcorejars/org.springframework.core-3.0.1.RELEASE-A.jar"/>
 	<classpathentry kind="lib" path="C:/spcorejars/org.springframework.expression-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Downloads/mysql-connector-java-8.0.11.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

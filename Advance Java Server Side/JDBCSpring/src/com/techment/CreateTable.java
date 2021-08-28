@@ -1,18 +1,21 @@
 package com.techment;
 
-public class CreateTable {
+import org.springframework.jdbc.core.JdbcTemplate;
 
+public class CreateTable
+{
 	JdbcTemplate jt;
-
+	
 	public void setJt(JdbcTemplate jt)
 	{
-		this.jt = jt;
+		this.jt = jt;		
 	}
-
+	
 	public void createTable()
-	{
-		jt.execute("create table sptest(sno number(3), sname varchar(10))");
+	{				
+		jt.execute("create table sptest(sno int, sname varchar)");
 		// execute() returns void
 		System.out.println("table created");
 	}
 }
+

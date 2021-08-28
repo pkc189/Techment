@@ -1,0 +1,25 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+<bean id="id1" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+  <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+  <property name="url" value="jdbc:mysql://localhost:5000/techment?autoReconnect=true&useSSL=false"/>
+  <property name="username" value="root"/>
+  <property name="password" value="Bodygaurd@2013"/>
+</bean>
+
+<bean id="id2" class="org.springframework.jdbc.core.JdbcTemplate">
+  <constructor-arg>
+      <ref bean="id1"/>
+  </constructor-arg>
+</bean>
+
+<bean id="id3" class="com.techment.CreateTable">
+  <property name="jt">
+     <ref bean="id2"/>
+  </property>
+</bean>
+
+</beans>
