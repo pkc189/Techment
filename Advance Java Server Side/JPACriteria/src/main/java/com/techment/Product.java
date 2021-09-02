@@ -8,7 +8,7 @@ import javax.persistence.Table;
 
 @Table(name="product500")
 @Entity
-@NamedQuery(name ="findAllProduct",query="select p from Product p")
+
 
 public class Product {
 
@@ -40,6 +40,10 @@ public class Product {
 	}
 	public void setCategory(String category) {
 		Category = category;
+	}
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", name=" + name + ", price=" + price + ", Category=" + Category + "]";
 	}
 	
 	

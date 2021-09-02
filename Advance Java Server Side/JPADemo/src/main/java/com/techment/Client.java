@@ -20,7 +20,7 @@ public class Client {
 		product.setId(7);
 		product.setPrice(45000);
 		product.setCategory("electronics");
-
+System.out.println("done");
 		em.persist(product);
 
 		em.getTransaction().commit();

@@ -1,0 +1,15 @@
+PNR           : Db_17082021_100
+Train no      : 15159
+Train name   : Sarnath
+Express
+
+From       : Durg
+To           : ballia
+Travel Date    : 17/08/2021
+
+
+Passengers  
+Name		Age		Gender		Fare  
+Pankaj	22			M			2600.0
+
+Total Fare : 2600.0
