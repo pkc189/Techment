@@ -25,17 +25,17 @@ public class InsertOperationClient {
 		Book cpp = new Book("C++", 134,harivansh);
 		Book javascript = new Book("C++", 634,harivansh);
 
-		Set<Book> books1 = new HashSet();
-		Set<Book> books2 = new HashSet();
-
-		books1.add(java);
-		books1.add(python);
-		books2.add(cpp);
-		books2.add(javascript);
-		
-
-		pankaj.setBooks(books1);
-		harivansh.setBooks(books2);
+//		Set<Book> books1 = new HashSet();
+//		Set<Book> books2 = new HashSet();
+//
+//		books1.add(java);
+//		books1.add(python);
+//		books2.add(cpp);
+//		books2.add(javascript);
+//		
+//
+//		pankaj.setBooks(books1);
+//		harivansh.setBooks(books2);
 		 
 	
 		em.persist(java);
