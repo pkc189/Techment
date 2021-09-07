@@ -22,7 +22,7 @@ public class JPACriteriaMultiSelect {
 		CriteriaQuery<Product> cq = cb.createQuery(Product.class);
 
 		Root<Product> product = cq.from(Product.class);
-
+		cq.multiselect(product.get("s_age"),cb.count(product)).groupBy(product.get("s_age")).having(cb.ge(product.get("s_age"), 24));  
 		cq.multiselect(product.get("name"),product.get("Category"));
 
 		CriteriaQuery<Product> select = cq.select(product);
