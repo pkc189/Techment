@@ -5,7 +5,7 @@ public class IDNotFoundException extends RuntimeException{
 	String msg;
 
 	public IDNotFoundException(String msg) {
-		super();
+		super(msg);
 		this.msg = msg;
 	}
 

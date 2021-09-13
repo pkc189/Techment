@@ -6,10 +6,12 @@ import java.util.NoSuchElementException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 
 import com.techment.dao.ICustomerDao;
 import com.techment.dto.CustomerDTO;
 import com.techment.entity.Customer;
+import com.techment.exception.ValidationException;
 
 @Service
 public class CustomerServiceImpl implements ICustomerService {
@@ -18,7 +20,7 @@ public class CustomerServiceImpl implements ICustomerService {
 	ICustomerDao iCustomerDao;
 
 	@Override
-	public String addNewCustomer(CustomerDTO customerDTO) {
+	public String addNewCustomer(CustomerDTO customerDTO)throws ValidationException {
 
 		Customer customer = new Customer(customerDTO.getAge(), customerDTO.getName(), customerDTO.getAddress(),
 				customerDTO.getEmail(), customerDTO.getMobile());

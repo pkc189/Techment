@@ -22,7 +22,7 @@ public class SwaggerConfig {
     }
     private ApiInfo metaData()
     {
-    	ApiInfo apiInfo = new ApiInfo("my customer controller", "this api provides details of customers", "1.5v", "www.myblog.htm", "abhishek", "apache", "http:hello.com");
+    	ApiInfo apiInfo = new ApiInfo("my customer controller", "this api provides details of customers", "1.5v", "www.myblog.htm", "pankaj", "apache", "http:hello.com");
     			return apiInfo;
     }
 }
