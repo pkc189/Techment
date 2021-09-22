@@ -1,0 +1,16 @@
+.text-success {
+  color: green;
+}
+
+.text-danger {
+  color: red;
+}
+
+.warning {
+  color: yellow;
+}
+
+.dummy {
+  color: crimson;
+  font-size: 67px;
+}

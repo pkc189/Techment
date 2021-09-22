@@ -1,0 +1,110 @@
+<p>test works!</p>
+
+<!-- binding property -->
+<input type="text" [value]="user" />
+<input type="text" value="{{ user }}" />
+
+<input type="text" value="{{ user }}" [disabled]="true" />
+
+<!-- binding classes -->
+
+<h2 [class]="success">Pankaj Chouhan</h2>
+<h2 [class.text-danger]="hasError">Pankaj Chouhan</h2>
+<!-- multiple class -->
+
+<h2 [ngClass]="msgClass">multiple class</h2>
+
+<!-- style binding -->
+
+<!-- <h2 [style.color]="'orange'">style binding</h2> -->
+
+<!-- style binding with condition-->
+<h2 [style.color]="hasError ? 'blue' : 'yellow'">style binding</h2>
+
+<h2 [style.color]="highlight">Pankaj</h2>
+
+<!-- multi style binding -->
+
+<h2 [ngStyle]="someStyle">multi style binding</h2>
+
+<!-- event binding -->
+
+<button (click)="onClick()">click</button>{{ greeting }}
+
+<div *ngIf="isLoggedIn; else loggedOut">Welcome back, friend.</div>
+
+<ng-template #loggedOut> Please friend, login. </ng-template>
+
+<ul>
+  <li *ngFor="let person of people">
+    {{ person.name }}
+  </li>
+</ul>
+
+<h1 style="color: red">Hello World</h1>
+<h1 [style.color]="hasError ? abc : other">Hello world2</h1>
+
+<h1 [class]="classVariable">Class Binding</h1>
+
+<h2 [class.dummy]="hasError">Condition class</h2>
+
+<h2>
+  --------------------------------------------------------------------------
+</h2>
+<div>
+  <h1>component-demo14-ngfor works!</h1>
+
+  <h2>*ngFor</h2>
+
+  <h2>*ngFor Basics</h2>
+  <ul>
+    <li *ngFor="let color of arrColors" [style.color]="color">
+      {{ color }}
+    </li>
+  </ul>
+
+  <h2>*ngFor with id and class</h2>
+  <ul>
+    <li
+      *ngFor="let color of arrColors"
+      id="{{ color }}"
+      class="{{ color }}"
+      [style.color]="color"
+    >
+      {{ color }}
+    </li>
+  </ul>
+
+  <h2>*ngFor with index</h2>
+  <ul>
+    <li
+      *ngFor="let color of arrColors; index as curIndex"
+      id="{{ color }}"
+      class="{{ color }}"
+      [style.color]="color"
+    >
+      Index is: {{ curIndex + 1 }}. {{ color }}
+    </li>
+  </ul>
+
+  <h2>*ngFor with index - first / last / even / odd</h2>
+  <ul>
+    <li
+      *ngFor="
+        let color of arrColors;
+        index as curIndex;
+        first as firstIndex;
+        last as lastIndex;
+        even as evenIndex;
+        odd as oddIndex
+      "
+      id="{{ color }}"
+      class="{{ color }}"
+      [style.color]="color"
+    >
+      {{ curIndex }}. {{ color }} :--: First Item: {{ firstIndex }} :--: Last
+      Item: {{ lastIndex }} :--: Odd: {{ oddIndex }} :--: Even:
+      {{ evenIndex }} :--:
+    </li>
+  </ul>
+</div>
